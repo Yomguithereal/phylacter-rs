@@ -1,0 +1,33 @@
+[package]
+name = "phylacter"
+version = "0.1.0"
+rust-version = "1.83.0"
+edition = "2021"
+authors = [
+  "Guillaume Plique <guillaumeplique@gmail.com>"
+]
+description = "Collection of exotic data structures."
+documentation = "https://github.com/Yomguithereal/phylacter-rs#readme"
+homepage = "https://github.com/Yomguithereal/phylacter-rs"
+repository = "https://github.com/Yomguithereal/phylacter-rs"
+readme = "README.md"
+keywords = ["union-find", "sparse-map", "sparse-set"]
+license = "MIT"
+include = [
+  "./Cargo.toml",
+  "./README.md",
+  "./LICENSE.txt",
+  "src/**/*.rs",
+]
+
+[profile.release-debug]
+inherits = "release"
+codegen-units = 16
+strip = false
+debug = true
+lto = false
+
+[lib]
+name = "phylacter"
+test = true
+doctest = false
