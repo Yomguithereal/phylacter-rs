@@ -1,6 +1,6 @@
 [package]
 name = "phylacter"
-version = "0.1.0"
+version = "0.2.0"
 rust-version = "1.83.0"
 edition = "2021"
 authors = [
@@ -11,7 +11,7 @@ documentation = "https://github.com/Yomguithereal/phylacter-rs#readme"
 homepage = "https://github.com/Yomguithereal/phylacter-rs"
 repository = "https://github.com/Yomguithereal/phylacter-rs"
 readme = "README.md"
-keywords = ["union-find", "sparse-map", "sparse-set"]
+keywords = ["topk-heap", "union-find", "sparse-map", "sparse-set"]
 license = "MIT"
 include = [
   "./Cargo.toml",
