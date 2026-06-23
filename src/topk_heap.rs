@@ -77,7 +77,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_map() {
+    fn test_topk_heap_map() {
         let mut heap = TopKHeapMap::new(2);
         heap.push_with(1, || "one");
         heap.push_with(2, || "two");
